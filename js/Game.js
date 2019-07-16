@@ -6,16 +6,25 @@ class Game {
     constructor() {
         this.missed = 0;
         this.phrases = [
-            new Phrase('hello'),
-            new Phrase('bye'),
-            new Phrase('win'),
-            new Phrase('play'),
-            new Phrase('game on')
+            new Phrase('eleven'),
+            new Phrase('dustin'),
+            new Phrase('demigorgan'),
+            new Phrase('mike'),
+            new Phrase('the upside down')
         ];
 
         this.activePhrase = null;
     }
     startGame() {
+        //hiding the overlay
+        $('#overlay').hide();
+
+        //setting the active phrase to equal to the random phrase that was chosen
+        this.activePhrase = this.getRandomPhrase();
+
+        //calling the addPhraseToDisplay method which displays phrase to the board
+        this.activePhrase.addPhraseToDisplay();
+
 
     }
     getRandomPhrase() {
@@ -32,7 +41,8 @@ class Game {
 
     }
     checkForWin() {
-
+        let $hiddenLetter = ('phrase.ul .hide');
+        
     }
     gameOver() {
 

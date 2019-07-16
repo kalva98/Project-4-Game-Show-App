@@ -1,4 +1,4 @@
-/* Main styles */
+ /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
@@ -19,7 +19,7 @@
 /* main */
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   font-family: 'Montserrat', sans-serif;
 }
 

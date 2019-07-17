@@ -35,14 +35,14 @@ class Phrase {
             if (letter === phraseLetter) {
                 return true;
             }
-        }
+        } //return false if letter does not match
         return false;
     }
 
     //Shows the letters on the board that the player guesses correct
     showMatchedLetter(letter) {
         //selects the specific phrase ul of the letter pressed by the player 
-        let $letters = $('#phrase ul' + letter)
+        let $letters = $('#phrase ul .' + letter)
 
         //removes "hides" class of selected letter
         $letters.removeClass('hide');

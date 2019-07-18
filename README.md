@@ -10,13 +10,13 @@ Includes a constructor. Phrases added to the game only include letters and space
 Game Class Method:
 Includes startGame() method, getRandomPhrase() method, handleInteraction() method, checkForWin() method, removeLife() method, gameOver() method. 
 
-app.js
+App.js:
 Clicking the "Start Game" button creates a new Game object and starts the game. Clicking an onscreen keyboard button results in a call to the handleInteraction() method for the clicked keyboard button. Clicking the spaces between and around the onscreen keyboard buttons does not result in the handleInteraction() method being called. Event listener has been added for the keydown or keyup event so that pressing a physical keyboard button results in the handleInteraction() method being called for the associated onscreen keyboard button.
 
 Resetting the Gameboard:
 After a game is completed, the gameboard is reset so that clicking the "Start Game" button loads a new game
 
-HTML & CSS
+HTML & CSS:
 Provided HTML and CSS is used. App styles have been personalized and changes have been noted in the README.md file and the project submission notes
 
 Changes made:
